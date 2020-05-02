@@ -7,7 +7,7 @@ const config = {
     path: __dirname + "/public/dist",
     filename: "bundle.js"
   },
-  mode: "development",
+  mode: "production",
   plugins: [
     new WebpackPwaManifest({
       name: "Budgeting Tracker App",
@@ -19,7 +19,7 @@ const config = {
       start_url: "/",
       icons: [
         {
-          src: path.resolve("public/icons/icon-192x192.png"),
+          src: path.resolve("public/assets/icons/icon-192x192.png"),
           sizes: [192, 512],
           destination: path.join("assets", "icons")
         }
